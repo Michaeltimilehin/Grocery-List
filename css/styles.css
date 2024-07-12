@@ -7,6 +7,17 @@ body {
   margin: 0;
   background-color: #f8f8f8;
 }
+.container:hover{
+  background-color: #5cb85c;
+  transition: 0.5s ease-in-out;
+}
+#wrap{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding-top: 10px;
+border-radius: 90px;
+box-sizing: border-box;
+}
+
 
 .container {
   background: #fff;
@@ -23,31 +34,39 @@ h1 {
 }
 
 .input-group {
-  display: flex;
-  margin-bottom: 20px;
+  display: block;
+  margin-bottom: 45px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
 input[type="text"] {
   flex: 1;
-  padding: 10px;
+  padding: 15px;
   border: 1px solid #ccc;
   border-radius: 4px 0 0 4px;
   outline: none;
+  padding-left: 70px;
+
+}
+#grocery-list{
+  font-size: 25px;
+  font-style: italic;
 }
 
 button {
-  padding: 10px;
+  padding: 15px;
   border: 1px solid #ccc;
   border-left: none;
   background-color: #5cb85c;
   color: white;
   cursor: pointer;
-  border-radius: 0 4px 4px 0;
+  border-radius: 0 6px 6px 0;
   outline: none;
 }
 
 button:hover {
-  background-color: #4cae4c;
+  background-color: #d7e4d7;
+  
 }
 
 ul {
@@ -58,13 +77,16 @@ ul {
 
 li {
   padding: 10px;
-  background-color: #f4f4f4;
+  background-color: #0f0e0e;
   border: 1px solid #ddd;
   border-radius: 4px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+}
+#grocery-list{
+  display: none;
 }
 
 li.purchased {
